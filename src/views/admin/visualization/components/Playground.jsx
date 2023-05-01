@@ -15,13 +15,15 @@ import {
   edges as initialEdges,
 } from "./initial-elements";
 import CustomNode from "./custom-node";
+import CN_CustomerSource from "./cn-customer-source";
 
 import "reactflow/dist/style.css";
 import "./custom.css";
 
 const nodeTypes = {
   custom: CustomNode,
-};
+  selectorCustomerNode: CN_CustomerSource,
+}
 
 const minimapStyle = {
   height: 120,
@@ -42,9 +44,10 @@ const Playground = (props) => {
   // this could also be done with a custom edge for example
   const edgesWithUpdatedTypes = edges.map((edge) => {
     if (edge.sourceHandle) {
-      const edgeType = nodes.find((node) => node.type === "custom").data
+      const edgeType = nodes.find((node) => node.type === "custom" || node.type === "selectorCustomerNode").data
         .selects[edge.sourceHandle];
       edge.type = edgeType;
+   
     }
 
     return edge;

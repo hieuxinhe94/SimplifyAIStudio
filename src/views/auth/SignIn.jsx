@@ -26,7 +26,7 @@ export default function SignIn() {
         </p>
         <div
           onClick={onSignInByDemo}
-          className="mb-6 flex h-[50px]   w-full items-center justify-center gap-2 rounded-xl bg-lightPrimary hover:cursor-pointer hover:dark:bg-navy-600 dark:bg-navy-700"
+          className="mb-6 flex h-[50px]   w-full items-center justify-center gap-2 rounded-xl bg-brand-500 hover:cursor-pointer hover:dark:bg-navy-500 dark:bg-navy-600"
         >
           <div className="rounded-full text-xl">
             <FcBookmark />
@@ -76,7 +76,7 @@ export default function SignIn() {
         </div>
         <button
           onClick={onSignIn}
-          className="linear mt-2 w-full rounded-xl bg-brand-500 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200"
+          className="linear mt-2 w-full rounded-xl bg-brand-500 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-navy-600 dark:text-white dark:hover:bg-navy-500 dark:active:bg-brand-200"
         >
           Đăng nhập
         </button>
