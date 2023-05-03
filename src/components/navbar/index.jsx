@@ -18,7 +18,7 @@ const Navbar = (props) => {
 
   return (
     <nav className="sticky top-1 z-40 flex flex-row flex-wrap items-center justify-between rounded-xl bg-white/10 p-1 backdrop-blur-xl dark:bg-[#0b14374d]">
-      <div className="ml-[6px]">
+      <div className="ml-[24px]">
         <div className="h-6 w-[224px] pt-1">
           <a
             className="text-sm font-normal text-navy-700 hover:underline dark:text-white dark:hover:text-white"
@@ -55,7 +55,7 @@ const Navbar = (props) => {
           <input
             type="text"
             placeholder="Search..."
-            class="block h-full w-full rounded-full bg-lightPrimary text-sm font-medium text-navy-700 outline-none placeholder:!text-gray-400 dark:bg-navy-600 dark:text-white dark:placeholder:!text-white sm:w-fit"
+            className="block h-full w-full rounded-full bg-lightPrimary text-sm font-medium text-navy-700 outline-none placeholder:!text-gray-400 dark:bg-navy-600 dark:text-white dark:placeholder:!text-white sm:w-fit"
           />
         </div>
         <span

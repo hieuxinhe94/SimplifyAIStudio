@@ -1,6 +1,6 @@
 const FreeCard = () => {
   return (
-    <div className="relative mt-14 flex w-[256px] justify-center rounded-[20px] bg-navy-900  pb-4">
+    <div className="relative mt-14 flex w-[224px] justify-center rounded-[20px] bg-navy-900  p-4">
       <div className="absolute -top-4 flex h-12 w-12 items-center justify-center rounded-full border-[4px] border-white bg-gradient-to-b from-[#868CFF] to-brand-500 dark:!border-navy-800">
         <svg
           width="12"
@@ -18,8 +18,8 @@ const FreeCard = () => {
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M20.5 31.989C26.8452 31.989 31.989 26.8452 31.989 20.5C31.989 14.1548 26.8452 9.01099 20.5 9.01099C14.1548 9.01099 9.01099 14.1548 9.01099 20.5C9.01099 26.8452 14.1548 31.989 20.5 31.989ZM20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17816 31.8218 0 20.5 0C9.17816 0 0 9.17816 0 20.5C0 31.8218 9.17816 41 20.5 41Z"
             fill="white"
           />

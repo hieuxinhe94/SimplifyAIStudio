@@ -8,10 +8,7 @@ import Widget from "components/widget/Widget";
 
 import Playground from "./components/Playground";
 
-const Visualization = () => {
-
-
-
+const Visualization = ({onChangeSidebarCb}) => {
   return (
     <div>
       {/* Card widget */}
@@ -51,8 +48,9 @@ const Visualization = () => {
       {/* Charts */}
 
       <div className="mx-2 p-2 rounded-xl grid grid-cols-1">
-      <Playground />
+      <Playground onOpenDetailCb={onChangeSidebarCb} />
       </div>
+      
     </div>
   );
 };

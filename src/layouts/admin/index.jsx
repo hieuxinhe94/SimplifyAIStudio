@@ -4,12 +4,17 @@ import Navbar from "components/navbar";
 import Sidebar from "components/sidebar";
 import Footer from "components/footer/Footer";
 import routes from "routes.js";
+import SidebarDetail from "views/admin/visualization/components/SidebarDetail";
+import { useSelector } from "react-redux";
 
 export default function Admin(props) {
   const { ...rest } = props;
   const location = useLocation();
   const [open, setOpen] = React.useState(true);
   const [currentRoute, setCurrentRoute] = React.useState("Main Dashboard");
+
+  const openDetail = useSelector((state) => state.openDetail.value)
+  console.log("openDetail changed " + openDetail)
 
   React.useEffect(() => {
     window.addEventListener("resize", () =>
@@ -61,12 +66,12 @@ export default function Admin(props) {
   document.documentElement.dir = "ltr";
   return (
     <div className="flex h-full w-full scrollbar">
-      <Sidebar open={open} onClose={() => setOpen(false)} />
+      <Sidebar open={open} hidden={openDetail} onClose={() => setOpen(false)} />
       {/* Navbar & Main Content */}
       <div className="h-full w-full bg-lightPrimary dark:!bg-navy-800">
         {/* Main Content */}
         <main
-          className={`mx-[12px] h-full flex-none transition-all md:pr-2 xl:ml-[313px]`}
+          className={`h-full flex-none transition-all md:pr-2 `}
         >
           {/* Routes */}
           <div className="h-full">
@@ -93,6 +98,8 @@ export default function Admin(props) {
           </div>
         </main>
       </div>
+
+      <SidebarDetail  open={open} hidden={!openDetail} onClose={() => setOpen(false)} />
     </div>
   );
 }
