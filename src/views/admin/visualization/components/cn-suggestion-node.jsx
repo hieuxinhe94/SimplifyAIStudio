@@ -62,17 +62,15 @@ function Select({ value, options, handleId, nodeId }) {
   );
 }
 
-function CN_CustomerSource({ id, data }) {
+function CN_RecommendingNode({ id, data }) {
   return (
-    <section>
+    <section className="rounded-lg border border-dashed border-indigo-600 " style={{minHeight: "120px"}}>
       <div className="custom-node__header flex py-1 ">
-        <span
-          className=""
-          dangerouslySetInnerHTML={{ __html: data.title }}
-        ></span>{" "}
+        <span dangerouslySetInnerHTML={{ __html: data.title }}></span>{" "}
         <MdCheckCircle className="mx-1 h-2 w-2 text-green-500" />
+        <hr className="my-1" />
       </div>
-      <div className="custom-node__body">
+      <div className="custom-node__body ">
         {data.analysis && (
           <div className="">
             <div className="flex w-full">
@@ -100,11 +98,36 @@ function CN_CustomerSource({ id, data }) {
           </div>
         )}
 
-        <hr className="my-1" />
         <span
           className=""
           dangerouslySetInnerHTML={{ __html: data.desc }}
         ></span>
+        <div className="">
+          {data.tasks &&
+            Object.keys(data.tasks).map((taskId, index) => (
+              <div key={index} className="flextext-[10px] w-full text-gray-800">
+                <Handle
+                  className="ml-1"
+                  style={{ backgroundColor: "white" }}
+                  type="target"
+                  position={Position.Left}
+                  id={taskId }
+                  key={taskId}
+                  isConnectable={true}
+                />
+                {data.tasks[taskId]}
+                <Handle
+                  className="mr-0"
+                  style={{ backgroundColor: "white" }}
+                  type="source"
+                  position={Position.Right}
+                  id={taskId }
+                 
+                  
+                />
+              </div>
+            ))}
+        </div>
         <div className="">{data.selectLabel || ""}</div>
         {data.selects &&
           Object.keys(data.selects).map((handleId) => (
@@ -116,32 +139,9 @@ function CN_CustomerSource({ id, data }) {
               options={data.options || []}
             />
           ))}
-
-        {!data.selects && (
-          <>
-            <div className="flex w-full">
-              <Handle
-                className=""
-                style={{ backgroundColor: "white" }}
-                type="target"
-                position={Position.Left}
-                id={id}
-                key={id}
-                isConnectable={true}
-              />
-              <Handle
-                className=""
-                style={{ backgroundColor: "white" }}
-                type="source"
-                position={Position.Right}
-                id={id}
-              />
-            </div>
-          </>
-        )}
       </div>
     </section>
   );
 }
 
-export default memo(CN_CustomerSource);
+export default memo(CN_RecommendingNode);

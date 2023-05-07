@@ -22,6 +22,7 @@ import {
 } from "./initial-elements";
 import CustomNode from "./custom-node";
 import CN_CustomerSource from "./cn-customer-source";
+import CN_RecommendingNode from "./cn-suggestion-node";
 
 import "reactflow/dist/style.css";
 import "./custom.css";
@@ -31,6 +32,8 @@ import { closeDetail, openDetail } from "./actions/adminReducers";
 const nodeTypes = {
   custom: CustomNode,
   selectorCustomerNode: CN_CustomerSource,
+  selectorRecommendNode: CN_RecommendingNode  ,
+
 };
 
 const minimapStyle = {

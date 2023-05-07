@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { closeDetail } from "./actions/adminReducers";
+import PieChartCard from "views/admin/dashboard/components/PieChartCard";
 
 const SidebarDetail = ({ open, hidden }) => {
   const dispatch = useDispatch();
@@ -42,7 +43,7 @@ const SidebarDetail = ({ open, hidden }) => {
       </div>
       <div className="mt-[58px] mb-7 h-px bg-gray-300 dark:bg-white/30" />
       {/* Nav item */}
-
+      <PieChartCard />
       <ul className="my-2 mx-2 mb-auto pt-1" style={{ width: "300px" }}></ul>
     </div>
   );

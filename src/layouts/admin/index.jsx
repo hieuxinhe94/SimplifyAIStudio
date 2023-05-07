@@ -13,7 +13,7 @@ export default function Admin(props) {
   const [open, setOpen] = React.useState(true);
   const [currentRoute, setCurrentRoute] = React.useState("Main Dashboard");
 
-  const openDetail = useSelector((state) => state.openDetail.value)
+  const openDetail = useSelector((state) =>  state.openDetail.value)
   console.log("openDetail changed " + openDetail)
 
   React.useEffect(() => {

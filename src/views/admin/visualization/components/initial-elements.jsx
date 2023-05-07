@@ -2,160 +2,15 @@ import React from "react";
 import { MarkerType, Position } from "reactflow";
 
 export const nodesJson = null;
-
-export const nodes = [
-  // {
-  //   id: "1",
-  //   type: "input",
-  //   data: {
-  //     label: "Input Node",
-  //   },
-  //   position: { x: 250, y: 0 },
-  // },
-  // {
-  //   id: "2",
-  //   data: {
-  //     label: "Default Node",
-  //   },
-  //   position: { x: 100, y: 100 },
-  // },
-  // {
-  //   id: "3",
-  //   type: "output",
-  //   data: {
-  //     label: "Output Node",
-  //   },
-  //   position: { x: 400, y: 100 },
-  // },
-  // {
-  //   id: "4",
-  //   type: "custom",
-  //   position: { x: 100, y: 200 },
-  //   data: {
-  //     selects: {
-  //       "handle-0": "smoothstep",
-  //       "handle-1": "smoothstep",
-  //     },
-  //   },
-  // },
-  // {
-  //   id: "5",
-  //   type: "output",
-  //   data: {
-  //     label: "custom style",
-  //   },
-  //   className: "circle",
-  //   style: {
-  //     background: "#2B6CB0",
-  //     color: "white",
-  //   },
-  //   position: { x: 400, y: 200 },
-  //   sourcePosition: Position.Right,
-  //   targetPosition: Position.Left,
-  // },
-  // {
-  //   id: "6",
-  //   type: "output",
-  //   style: {
-  //     background: "#63B3ED",
-  //     color: "white",
-  //     width: 100,
-  //   },
-  //   data: {
-  //     label: "Node",
-  //   },
-  //   position: { x: 400, y: 325 },
-  //   sourcePosition: Position.Right,
-  //   targetPosition: Position.Left,
-  // },
-  // {
-  //   id: "7",
-  //   type: "default",
-  //   className: "annotation",
-  //   data: {
-  //     label: (
-  //       <>
-  //         Bạn đang sử dụng <strong>Phiên bản thử nghiệm</strong> với dữ liệu mặc
-  //         định
-  //         <br />
-  //         Đăng ký tài khoản mới tại{" "}
-  //         <strong>
-  //           {" "}
-  //           <a href=""> đây </a>
-  //         </strong>{" "}
-  //         🥳
-  //       </>
-  //     ),
-  //   },
-  //   draggable: false,
-  //   selectable: false,
-  //   position: { x: 150, y: 600 },
-  // },
-  // {
-  //   id: "8",
-  //   type: "selectorCustomerNode",
-  //   data: {
-  //     label: "Node",
-  //     selects: {
-  //       "handle-0": "CustomerSource_All",
-  //     },
-  //   },
-  //   position: { x: 200, y: 200 },
-  //   sourcePosition: Position.Right,
-  //   targetPosition: Position.Left,
-  // },
-];
+export const nodes = [];
 
 export const edges = [
   {
-    id: "khachhangcanhan-tiepdontaiquay",
-    source: "khachhangcanhan",
-    target: "tiepdontaiquay",
+    id: "dailybanhang-kenhdathangtructuyen",
+    source: "dailybanhang",
+    target: "kenhdathangtructuyen",
     type: "smoothstep",
-    sourceHandle: "khachhangcanhan-0",
-    data: {
-      selectIndex: 0,
-    },
-    markerEnd: {
-      type: MarkerType.ArrowClosed,
-    },
-    animated: true,
-    label: "57.8%",
-    labelBgPadding: [8, 4],
-    labelBgBorderRadius: 4,
-    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
-    markerEnd: {
-      type: MarkerType.ArrowClosed,
-    },
-  },
-  {
-    id: "khachhangcanhan-nganhangtructuyen",
-    source: "khachhangcanhan",
-    target: "nganhangtructuyen",
-    type: "smoothstep",
-    sourceHandle: "nganhangtructuyen-0",
-    data: {
-      selectIndex: 0,
-    },
-    markerEnd: {
-      type: MarkerType.ArrowClosed,
-    },
-    animated: true,
-    label: "32.2%",
-    labelBgPadding: [8, 4],
-    labelBgBorderRadius: 4,
-    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
-    markerEnd: {
-      type: MarkerType.ArrowClosed,
-    },
-  },
-  ,
-  {
-    id: "khachhangcanhan-khachhangtiemnang",
-    source: "khachhangcanhan",
-    target: "khachhangtiemnang",
-    type: "smoothstep",
-    sourceHandle: "khachhangtiemnang-0",
+    sourceHandle: "kenhdathangtructuyen_0",
     data: {
       selectIndex: 0,
     },
@@ -171,13 +26,12 @@ export const edges = [
       type: MarkerType.ArrowClosed,
     },
   },
-
   {
-    id: "khachhangdoanhnghiep-tiepdontaiquay",
-    source: "khachhangdoanhnghiep",
-    target: "tiepdontaiquay",
+    id: "dailybanhang-traodoiquaemail",
+    source: "dailybanhang",
+    target: "traodoiquaemail",
     type: "smoothstep",
-    sourceHandle: "khachhangdoanhnghiep-0",
+    sourceHandle: "traodoiquaemail_0",
     data: {
       selectIndex: 0,
     },
@@ -185,56 +39,390 @@ export const edges = [
       type: MarkerType.ArrowClosed,
     },
     animated: false,
+    label: "12.2%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
   },
+  {
+    id: "dailybanhang-traodoiquafax",
+    source: "dailybanhang",
+    target: "traodoiquafax",
+    type: "smoothstep",
+    sourceHandle: "traodoiquafax_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "12.2%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+
+  /* second layer */
+
+  {
+    id: "kenhdathangtructuyen-capnhatthongtinsanpham",
+    source: "kenhdathangtructuyen",
+    target: "capnhatthongtinsanpham",
+    type: "smoothstep",
+    sourceHandle: "kenhdathangtructuyen_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: true,
+    label: "*82.2%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "kenhdathangtructuyen-chatbotbanhang",
+    source: "kenhdathangtructuyen",
+    target: "chatbotbanhang",
+    type: "smoothstep",
+    sourceHandle: "kenhdathangtructuyen_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: true,
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+
+  {
+    id: "traodoiquafax-phongkinhdoanh",
+    source: "traodoiquafax",
+    target: "phongkinhdoanh",
+    type: "smoothstep",
+    sourceHandle: "traodoiquafax_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+
+  {
+    id: "traodoiquaemail-phongkinhdoanh",
+    source: "traodoiquaemail",
+    target: "phongkinhdoanh",
+    type: "smoothstep",
+    sourceHandle: "traodoiquaemail_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "gray", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+
+  /* third layer */
+  {
+    id: "capnhatthongtinsanpham-hethongcrm",
+    source: "capnhatthongtinsanpham",
+    target: "hethongcrm",
+    type: "smoothstep",
+    sourceHandle: "capnhatthongtinsanpham_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: true,
+    label: "*82.2%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "chatbotbanhang-hethongcrm",
+    source: "chatbotbanhang",
+    target: "hethongcrm",
+    type: "smoothstep",
+    sourceHandle: "chatbotbanhang_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: true,
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "phongkinhdoanh-nhanvienkinhdoanhtuvan",
+    source: "phongkinhdoanh",
+    target: "nhanvienkinhdoanhtuvan",
+    type: "smoothstep",
+    sourceHandle: "phongkinhdoanh_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "gray", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  /* fourth layer */
+  {
+    id: "hethongcrm-hethongcrmkyhd",
+    source: "hethongcrm",
+    target: "hethongcrmkyhd",
+    type: "smoothstep",
+    sourceHandle: "hethongcrm_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: true,
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "nhanvienkinhdoanhtuvan-nhanvienkhoquy",
+    source: "nhanvienkinhdoanhtuvan",
+    target: "nhanvienkhoquy",
+    type: "smoothstep",
+    sourceHandle: "nhanvienkinhdoanhtuvan_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "gray", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  /* fifth layer */
+  {
+    id: "hethongcrmkyhd-thanhtoanliennganhang",
+    source: "hethongcrmkyhd",
+    target: "thanhtoanliennganhang",
+    type: "smoothstep",
+    sourceHandle: "hethongcrmkyhd_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+   
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "nhanvienkhoquy-nhanvienkinhdoanhkyhopdong",
+    source: "nhanvienkhoquy",
+    target: "nhanvienkinhdoanhkyhopdong",
+    type: "smoothstep",
+    sourceHandle: "nhanvienkhoquy_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "gray", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  /* sixth layer */
+  {
+    id: "thanhtoanliennganhang-doitacgiaonhan",
+    source: "thanhtoanliennganhang",
+    target: "doitacgiaonhan",
+    type: "smoothstep",
+    sourceHandle: "thanhtoanliennganhang_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+     
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  {
+    id: "nhanvienkinhdoanhkyhopdong-thanhtoanhopdong",
+    source: "nhanvienkinhdoanhkyhopdong",
+    target: "thanhtoanhopdong",
+    type: "smoothstep",
+    sourceHandle: "nhanvienkinhdoanhkyhopdong_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "gray", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  /* seventh layer */
+  {
+    id: "doitacgiaonhan-giaohangvatly",
+    source: "doitacgiaonhan",
+    target: "giaohangvatly",
+    type: "smoothstep",
+    sourceHandle: "doitacgiaonhan_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "#FFCC00", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+
+  {
+    id: "thanhtoanhopdong-giaohangvatly",
+    source: "thanhtoanhopdong",
+    target: "giaohangvatly",
+    type: "smoothstep",
+    sourceHandle: "thanhtoanhopdong_0",
+    data: {
+      selectIndex: 0,
+    },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+    animated: false,
+    label: "*17.8%",
+    labelBgPadding: [8, 4],
+    labelBgBorderRadius: 4,
+    labelBgStyle: { fill: "gray", color: "#fff", fillOpacity: 0.7 },
+    markerEnd: {
+      type: MarkerType.ArrowClosed,
+    },
+  },
+  
+  /* end edgs */
 ];
 
 export const getBindingNodes = (defaultNodes) => {
   const rootDatasources = [
     {
-      id: "khachhangcanhan",
+      id: "dailybanhang",
       type: `selectorCustomerNode`,
       metadata: {
-        title: `Khách hàng <strong>Cá nhân</strong>`,
+        title: `<strong>Đại lý</strong> phân phối`,
+        analysis: {
+          effort: 100,
+        },
         selects: {
-          "khachhangcanhan-0": "khachhangcanhan_all",
+          "dailybanhang-0": "dailybanhang",
         },
         options: [
           {
-            value: "khachhangcanhan_1",
+            value: "dailybanhang_1",
             label: "Khách hàng mới",
           },
           {
-            value: "khachhangcanhan_2",
-            label: "Khách hàng cũ",
-          },
-
-          {
-            value: "khachhangcanhan_all",
-            label: "Tất cả",
-          },
-        ],
-      },
-    },
-    {
-      id: "khachhangdoanhnghiep",
-      type: `selectorCustomerNode`,
-      metadata: {
-        title: `Khách hàng <strong>doanh nghiệp</strong>`,
-        selects: {
-          "khachhangdoanhnghiep-0": "khachhangdoanhnghiep_all",
-        },
-
-        options: [
-          {
-            value: "khachhangdoanhnghiep_1",
-            label: "Khách hàng mới",
-          },
-          {
-            value: "khachhangdoanhnghiep_2",
+            value: "dailybanhang_2",
             label: "Khách hàng cũ",
           },
           {
-            value: "khachhangdoanhnghiep_all",
+            value: "dailybanhang",
             label: "Tất cả",
           },
         ],
@@ -244,89 +432,74 @@ export const getBindingNodes = (defaultNodes) => {
 
   const secondaryDatasources = [
     {
-      id: "tiepdontaiquay",
-      type: `selectorCustomerNode`,
+      id: "kenhdathangtructuyen",
+      type: `selectorRecommendNode`,
       metadata: {
-        title: `Tiếp đón <strong> tại quầy</strong> `,
-        selectLabel: `Chọn dịch vụ`,
-        selects: {
-          "handle-1010": "CustomerSource_All",
-        },
-        options: [
-          {
-            value: "CustomerSource_Office",
-            label: "Mở mới tài khoản",
-          },
-          {
-            value: "CustomerSource_Agent",
-            label: "Chuyển tiền liên ngân hàng",
-          },
-          {
-            value: "CustomerSource_Facebook",
-            label: "Gửi tiết kiệm",
-          },
-          {
-            value: "CustomerSource_All",
-            label: "Tất cả",
-          },
-        ],
-      },
-    },
-    {
-      id: "nganhangtructuyen",
-      type: `selectorCustomerNode`,
-      metadata: {
-        title: `Ngân hàng <strong> trực tuyến</strong> `,
-        selectLabel: `Chọn phương thức`,
+        title: `Ứng dụng <strong> trực tuyến</strong> `,
+        selectLabel: `Chọn phân loại`,
         selectType: `multiple`,
+        analysis: {
+          effort: 100,
+        },
         selects: {
-          "nganhangtructuyen-0": "CustomerSource_All",
+          "kenhdathangtructuyen-0": "kenhdathangtructuyen",
         },
         options: [
           {
-            value: "CustomerSource_Office",
-            label: "Ứng dụng EBanking",
-          },
-          {
-            value: "CustomerSource_Agent",
+            value: "kenhdathangtructuyen_0",
             label: "Website",
           },
           {
-            value: "CustomerSource_Facebook",
-            label: "Ví điện tử",
+            value: "kenhdathangtructuyen_1",
+            label: "Mobile App",
           },
           {
-            value: "CustomerSource_All",
+            value: "kenhdathangtructuyen_2",
+            label: "Các kênh mạng xã hội",
+          },
+          {
+            value: "kenhdathangtructuyen",
             label: "Tất cả",
           },
         ],
       },
     },
     {
-      id: "khachhangtiemnang",
+      id: "traodoiquaemail",
       type: `selectorCustomerNode`,
       metadata: {
-        title: `Chuyển thành <strong>Khách hàng tiềm năng</strong>`,
-        selectLabel: `Chọn phân loại`,
-        selectType: `multiple`,
+        title: `Trao đổi qua<strong> Email</strong> `,
+        selectLabel: `Chọn dịch vụ`,
+        analysis: {
+          effort: 100,
+        },
         selects: {
-          "handle-1030": "CustomerSource_All",
+          "giaodichquaemail-1": "giaodichquaemail",
         },
         options: [
           {
-            value: "CustomerSource_Office",
-            label: "Không đủ giấy tờ",
+            value: "giaodichquaemail",
+            label: "Tất cả",
           },
+        ],
+      },
+    },
+    {
+      id: "traodoiquafax",
+      type: `selectorCustomerNode`,
+      metadata: {
+        title: `Trao đổi qua <strong> Fax/Phone</strong> `,
+        analysis: {
+          effort: 100,
+        },
+        selectLabel: `Chọn phương thức`,
+        selectType: `multiple`,
+        selects: {
+          "traodoiquafax-0": "traodoiquafax",
+        },
+        options: [
           {
-            value: "CustomerSource_Agent",
-            label: "Chưa hoàn thiện hồ sơ",
-          },
-          {
-            value: "CustomerSource_Facebook",
-            label: "Khác",
-          },
-          {
-            value: "CustomerSource_All",
+            value: "traodoiquafax",
             label: "Tất cả",
           },
         ],
@@ -336,50 +509,49 @@ export const getBindingNodes = (defaultNodes) => {
 
   const thirdDatasources = [
     {
-      id: "motaikhoantaiquay",
-      type: `selectorCustomerNode`,
+      id: "capnhatthongtinsanpham",
+      type: `selectorRecommendNode`,
       metadata: {
-        title: `<strong>Mở tài khoản</strong> tại quầy`,
-        selectLabel: `Chọn dịch vụ`,
-        selects: {
-          "motaikhoantaiquay-0": "motaikhoantaiquay-all",
+        title: `Thông tin sản phẩm`,
+
+        tasks: {
+          capnhatthongtinsanpham_0: `Chính sách bán hàng`,
+          capnhatthongtinsanpham_1: `Thông tin sản phẩm`,
+          capnhatthongtinsanpham_2: `Cá nhân hóa danh mục hàng hóa phù hợp`,
+          capnhatthongtinsanpham_3: `Cá nhân hóa mức chiết khấu`,
         },
-        options: [
-          {
-            value: "motaikhoantaiquay-1",
-            label: "Mở mới thành công",
-          },
-          {
-            value: "motaikhoantaiquay-2",
-            label: "Mở mới thất bại",
-          },
-          {
-            value: "motaikhoantaiquay-all",
-            label: "Tất cả",
-          },
-        ],
       },
     },
     {
-      id: "ekyckhachhangtructuyen",
+      id: "chatbotbanhang",
+      type: `selectorRecommendNode`,
+      metadata: {
+        title: `Chatbot tra cứu & hồ trợ`,
+
+        tasks: {
+          chatbotbanhang_0: `Thông tin chínhh sách bán hàng`,
+          chatbotbanhang_1: `Tra cứu trạng thái đơn hàng`,
+          chatbotbanhang_2: `Tra cứu thông tin kỹ thuật`,
+          chatbotbanhang_3: `QnA hỗ trợ bảo hành`,
+        },
+      },
+    },
+
+    {
+      id: "phongkinhdoanh",
       type: `selectorCustomerNode`,
       metadata: {
-        title: `<strong>EKyc</strong> xác thực`,
-        selectLabel: `Chọn loại`,
+        title: `<strong>Phòng kinh doanh</strong> `,
+        selectLabel: `Chọn dịch vụ`,
+        analysis: {
+          effort: 100,
+        },
         selects: {
-          "ekyckhachhangtructuyen-0": "ekyckhachhangtructuyen-all",
+          phongkinhdoanh_0: "phongkinhdoanh",
         },
         options: [
           {
-            value: "ekyckhachhangtructuyen-1",
-            label: "Mở mới thành công",
-          },
-          {
-            value: "ekyckhachhangtructuyen-2",
-            label: "Mở mới thất bại",
-          },
-          {
-            value: "ekyckhachhangtructuyen-all",
+            value: "phongkinhdoanh",
             label: "Tất cả",
           },
         ],
@@ -389,84 +561,138 @@ export const getBindingNodes = (defaultNodes) => {
 
   const fourthDatasources = [
     {
-      id: "xacthucthongtinkhachhangtudong",
-      type: `selectorCustomerNode`,
+      id: "hethongcrm",
+      type: `selectorRecommendNode`,
       metadata: {
-        title: `<strong>Tự động</strong>Xác thực khách hàng`,
-        selectLabel: `Chọn dịch vụ`,
-        selects: {
-          "motaikhoantaiquay-0": "motaikhoantaiquay-all",
+        title: `Hệ thống CRM`,
+        tasks: {
+          hethongcrm_0: `Cá nhân hóa danh mục hàng hóa phù hợp`,
+          hethongcrm_1: `Cá nhân hóa mức chiết khấu`,
         },
-        options: [
-          {
-            value: "motaikhoantaiquay-1",
-            label: "Thông tin hợp lệ",
-          },
-          {
-            value: "motaikhoantaiquay-2",
-            label: "Thông tin không khớp",
-          },
-          {
-            value: "motaikhoantaiquay-all",
-            label: "Tất cả",
-          },
-        ],
       },
     },
     {
-      id: "xacthucthongtinkhachhangthucong",
+      id: "nhanvienkinhdoanhtuvan",
       type: `selectorCustomerNode`,
       metadata: {
-        title: `<strong>Tự động</strong>Xác thực khách hàng`,
-        selectLabel: `Chọn dịch vụ`,
-        selects: {
-          "xacthucthongtinkhachhangthucong-0": "xacthucthongtinkhachhangthucong-all",
+        title: ` <strong> Nhân viên kinh doanh</strong> `,
+        analysis: {
+          effort: 100,
         },
-        options: [
-          {
-            value: "xacthucthongtinkhachhangthucong-1",
-            label: "Thông tin hợp lệ",
-          },
-          {
-            value: "xacthucthongtinkhachhangthucong-2",
-            label: "Thông tin không khớp",
-          },
-          {
-            value: "xacthucthongtinkhachhangthucong-all",
-            label: "Tất cả",
-          },
-        ],
+        tasks: {
+          nhanvienkinhdoanhtuvan_0: `Chuyển nhận hợp đồng mua bán`,
+          nhanvienkinhdoanhtuvan_1: `Thảo luận điều khoản`,
+          nhanvienkinhdoanhtuvan_2: `Ký kết HĐ`,
+        },
       },
     },
   ];
 
   const fifthDatasources = [
     {
-      id: "phathanhthekhachhang",
-      type: `selectorCustomerNode`,
+      id: "hethongcrmkyhd",
+      type: `selectorRecommendNode`,
       metadata: {
-        title: `Phát hành <strong>Thẻ</strong>`,
-        selectLabel: `Chọn loại thẻ phát hành`,
-        selects: {
-          "phathanhthekhachhang-0": "phathanhthekhachhang-all",
+        title: `Chữ ký điện tử`,
+
+        tasks: {
+          hethongcrmkyhd_0: `Ký hợp đồng điện tử`,
+          hethongcrmkyhd_1: `Tích hợp chữ ký số`,
+          hethongcrmkyhd_2: `Tích hợp kênh logictics đối tác`,
         },
-        options: [
-          {
-            value: "phathanhthekhachhang-1",
-            label: "A",
-          },
-          {
-            value: "phathanhthekhachhang-2",
-            label: "B",
-          },
-          {
-            value: "phathanhthekhachhang-all",
-            label: "Tất cả",
-          },
-        ],
       },
     },
-    
+    {
+      id: "nhanvienkhoquy",
+      type: `selectorCustomerNode`,
+      metadata: {
+        title: `<strong>Nghiệp vụ Kho quỹ</strong> `,
+
+        analysis: {
+          effort: 100,
+        },
+        tasks: {
+          nhanvienkhoquy_0: `Kiểm tra tồn kho`,
+          nhanvienkhoquy_1: `Kiểm tra các đơn hàng đang xử lý`,
+          nhanvienkhoquy_2: `Kiểm tra khả năng đáp ứng`,
+          nhanvienkhoquy_3: `Thông báo tình trạng`,
+        },
+      },
+    },
+  ];
+
+  const sixthDatasources = [
+    {
+      id: "thanhtoanliennganhang",
+      type: `selectorRecommendNode`,
+      metadata: {
+        title: `Thanh toán trực tuyến`,
+        tasks: {
+          thanhtoanliennganhang_0: `Đồng bộ trạng thái đơn hàng`,
+          thanhtoanliennganhang_1: `Đồng bộ kênh tài chính`,
+        },
+      },
+    },
+    {
+      id: "nhanvienkinhdoanhkyhopdong",
+      type: `selectorCustomerNode`,
+      metadata: {
+        title: `<strong>Kế toán</strong> `,
+
+        analysis: {
+          effort: 100,
+        },
+        tasks: {
+          nhanvienkinhdoanhkyhopdong_0: `Chuyển nhận hợp đồng mua bán`,
+          nhanvienkinhdoanhkyhopdong_1: `Thảo luận điều khoản`,
+          nhanvienkinhdoanhkyhopdong_2: `Ký kết HĐ`,
+        },
+      },
+    },
+  ];
+
+  const seventhDatasources = [
+    {
+      id: "doitacgiaonhan",
+      type: `selectorRecommendNode`,
+      metadata: {
+        title: `Tích hợp Đối tác Logictic`,
+        tasks: {
+          doitacgiaonhan_0: `Đồng bộ trạng thái đơn hàng`,
+          doitacgiaonhan_1: `Đồng bộ kênh tài chính`,
+        },
+      },
+    },
+    {
+      id: "thanhtoanhopdong",
+      type: `selectorCustomerNode`,
+      metadata: {
+        title: `<strong>Thanh toán</strong> `,
+
+        analysis: {
+          effort: 100,
+        },
+        tasks: {
+          thanhtoanhopdong_0: `Chuyển nhận hợp đồng mua bán`,
+          thanhtoanhopdong_1: `Thảo luận điều khoản`,
+          thanhtoanhopdong_2: `Ký kết HĐ`,
+        },
+      },
+    },
+  ];
+
+  const eighthDatasources = [
+    {
+      id: "giaohangvatly",
+      type: `selectorRecommendNode`,
+      metadata: {
+        title: `Vận chuyển & Giao hàng`,
+        tasks: {
+          giaohangvatly_0: `Đồng bộ trạng thái đơn hàng`,
+          giaohangvatly_1: `Đồng bộ kênh tài chính`,
+        },
+      },
+    },
   ];
 
   /* Add first round */
@@ -503,47 +729,86 @@ export const getBindingNodes = (defaultNodes) => {
     var newNode = {
       id: "" + element.id,
       type: element.type == "default" ? "input" : element.type,
-      position: { x: 550, y: j * 250 },
+      position: { x: 500, y: j * 150 },
       data: element.metadata,
       sourcePosition: Position.Right,
     };
 
     defaultNodes.push(newNode);
   }
- 
 
- /* Add fourth and deeper round */
- for (let j = 0; j < fourthDatasources.length; j++) {
-  const element = fourthDatasources[j];
-  var newNode = {
-    id: "" + element.id,
-    type: element.type == "default" ? "input" : element.type,
-    position: { x: 750, y: j * 250 },
-    data: element.metadata,
-    sourcePosition: Position.Right,
-  };
+  /* Add fourth and deeper round */
+  for (let j = 0; j < fourthDatasources.length; j++) {
+    const element = fourthDatasources[j];
+    var newNode = {
+      id: "" + element.id,
+      type: element.type == "default" ? "input" : element.type,
+      position: { x: 750, y: j * 250 },
+      data: element.metadata,
+      sourcePosition: Position.Right,
+      animated: true,
+    };
 
-  defaultNodes.push(newNode);
-}
+    defaultNodes.push(newNode);
+  }
 
+  /* Add fifth and deeper round */
+  for (let j = 0; j < fifthDatasources.length; j++) {
+    const element = fifthDatasources[j];
+    var newNode = {
+      id: "" + element.id,
+      type: element.type == "default" ? "input" : element.type,
+      position: { x: 1000, y: j * 250 },
+      data: element.metadata,
+      sourcePosition: Position.Right,
+    };
 
- /* Add fifth and deeper round */
- for (let j = 0; j < fifthDatasources.length; j++) {
-  const element = fifthDatasources[j];
-  var newNode = {
-    id: "" + element.id,
-    type: element.type == "default" ? "input" : element.type,
-    position: { x: 950, y: j * 250 },
-    data: element.metadata,
-    sourcePosition: Position.Right,
-  };
+    defaultNodes.push(newNode);
+  }
 
-  defaultNodes.push(newNode);
-}
+  /* Add fifth and deeper round */
+  for (let j = 0; j < sixthDatasources.length; j++) {
+    const element = sixthDatasources[j];
+    var newNode = {
+      id: "" + element.id,
+      type: element.type == "default" ? "input" : element.type,
+      position: { x: 1250, y: j * 250 },
+      data: element.metadata,
+      sourcePosition: Position.Right,
+    };
 
-return defaultNodes;
+    defaultNodes.push(newNode);
+  }
+
+  /* Add fifth and deeper round */
+  for (let j = 0; j < seventhDatasources.length; j++) {
+    const element = seventhDatasources[j];
+    var newNode = {
+      id: "" + element.id,
+      type: element.type == "default" ? "input" : element.type,
+      position: { x: 1500, y: j * 250 },
+      data: element.metadata,
+      sourcePosition: Position.Right,
+    };
+
+    defaultNodes.push(newNode);
+  }
+
+  /* Add eighth and deeper round */
+  for (let j = 0; j < eighthDatasources.length; j++) {
+    const element = eighthDatasources[j];
+    var newNode = {
+      id: "" + element.id,
+      type: element.type == "default" ? "input" : element.type,
+      position: { x: 1750, y: j * 250 },
+      data: element.metadata,
+      sourcePosition: Position.Right,
+    };
+
+    defaultNodes.push(newNode);
+  }
+  return defaultNodes;
 };
-
 
 export const getBindingEdges = (defaultEdges) => {
   return defaultEdges;
